@@ -6,6 +6,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { throttle } from 'lodash';
 import axios from 'axios';
 import Loader from '../../components/Loader/Loader';
+import { API_URL } from '../../CONFIG';
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -88,7 +89,7 @@ const Home: NextPage = () => {
   const runPrediction = () => {
     setLoading(true);
     axios
-      .post(`/api/mnist/`, {
+      .post(`${API_URL}/api/mnist/`, {
         data: canvasRef.current
           .toDataURL()
           .replace(/^data:image\/[a-z]+;base64,/, ''),
@@ -188,7 +189,7 @@ const Home: NextPage = () => {
                   display: 'flex',
                   border: '2px solid white',
                   margin: 'auto',
-                  touchAction: 'none'
+                  touchAction: 'none',
                 }}
                 width={300}
                 height={300}
