@@ -1,1 +1,1 @@
-export const API_URL = 'http://178.62.11.107';
+export const API_URL = 'https://medik.com.ng';
