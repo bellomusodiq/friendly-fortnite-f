@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Header />
-      <Row>
+      <Row className="Container">
         <Col xs={0} md={4}>
           <SideNav />
         </Col>

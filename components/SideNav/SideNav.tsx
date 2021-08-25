@@ -21,6 +21,13 @@ export const SideNavItem: React.FC<Props> = ({ closeSideNav }) => {
       </div>
       <Divider style={{ margin: 7.5 }} />
       <div
+        onClick={() => navigate('/image-agumentation', '/image-agumentation')}
+        className="SideNavItem"
+      >
+        <Typography.Text>Image Data Agumentation</Typography.Text>
+      </div>
+      <Divider style={{ margin: 7.5 }} />
+      <div
         onClick={() => navigate('/digit-recognizer', '/digit-recognizer')}
         className="SideNavItem"
       >

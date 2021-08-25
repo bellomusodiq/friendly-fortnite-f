@@ -3,10 +3,17 @@
   top: 0;
   left: 0;
   background-color: rgba(212, 212, 212, 0.7);
-  z-index: 2;
+  z-index: 2000;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+.ant-alert.ant-alert-error.ant-alert-no-icon.Alert {
+  z-index: 2001;
+  position: fixed;
+  top: 80px;
+  left: 10vw;
+  width: 80vw;
 }
